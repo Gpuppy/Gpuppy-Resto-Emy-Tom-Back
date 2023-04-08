@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AgreeablePizzaController!{% endblock %}
+
+{% block body %}
+
+{% if age > 18 %}
+<p> adult <p>
+{% else %}
+<p> kid <p>
+
+{% endif %} 
+
+Vous avez 
+{{age}} 
+ans
+
+{% set fruits = ["banana", "apple", "cherry"] %}
+<ul>
+{% for fruit in fruits %}
+
+<li> {{ fruit }} </li>
+{% endfor %}
+</ul>
+{% endblock %}
